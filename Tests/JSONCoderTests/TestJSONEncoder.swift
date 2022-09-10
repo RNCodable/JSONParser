@@ -887,7 +887,7 @@ class TestRNJSONEncoder : XCTestCase {
         encoder.keyEncodingStrategy = .convertToSnakeCase
         encoder.dateEncodingStrategy = .iso8601
         let encodedData = try encoder.encode(data)
-        guard let jsonObject = try RNJSONSerialization.jsonObject(with: encodedData) as? [String: Any] else {
+        guard let jsonObject = try JSONSerialization.jsonObject(with: encodedData) as? [String: Any] else {
             XCTFail("Cant decode json object")
             return
         }
@@ -936,7 +936,7 @@ class TestRNJSONEncoder : XCTestCase {
         encoder.keyEncodingStrategy = .convertToSnakeCase
         let camelCaseDictionary = ["camelCaseKey": ["nested_dictionary": 1]]
         let encodedData = try encoder.encode(camelCaseDictionary)
-        guard let jsonObject = try RNJSONSerialization.jsonObject(with: encodedData) as? [String: [String: Int]] else {
+        guard let jsonObject = try JSONSerialization.jsonObject(with: encodedData) as? [String: [String: Int]] else {
             XCTFail("Cant decode json object")
             return
         }
@@ -1514,7 +1514,7 @@ fileprivate struct JSON: Equatable {
     private var jsonObject: Any
 
     fileprivate init(data: Data) throws {
-        self.jsonObject = try RNJSONSerialization.jsonObject(with: data, options: [])
+        self.jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
     }
 
     static func ==(lhs: JSON, rhs: JSON) -> Bool {
