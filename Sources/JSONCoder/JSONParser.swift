@@ -10,6 +10,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+import JSONValue
 
 internal struct JSONParser {
     var reader: DocumentReader
