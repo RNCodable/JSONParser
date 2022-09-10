@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "JSONCoder"
-               BuildableName = "JSONCoder"
-               BlueprintName = "JSONCoder"
+               BlueprintIdentifier = "JSONParser"
+               BuildableName = "JSONParser"
+               BlueprintName = "JSONParser"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "JSONCoderTests"
-               BuildableName = "JSONCoderTests"
-               BlueprintName = "JSONCoderTests"
+               BlueprintIdentifier = "JSONParserTests"
+               BuildableName = "JSONParserTests"
+               BlueprintName = "JSONParserTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "JSONCoderTests"
-               BuildableName = "JSONCoderTests"
-               BlueprintName = "JSONCoderTests"
+               BlueprintIdentifier = "JSONParserTests"
+               BuildableName = "JSONParserTests"
+               BlueprintName = "JSONParserTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -75,9 +75,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "JSONCoder"
-            BuildableName = "JSONCoder"
-            BlueprintName = "JSONCoder"
+            BlueprintIdentifier = "JSONParser"
+            BuildableName = "JSONParser"
+            BlueprintName = "JSONParser"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
